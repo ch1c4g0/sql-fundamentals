@@ -45,4 +45,19 @@ Structured data is stored in rows and columns inside a table. Relations can be m
 
 <p><h1>Tables, Rows, and Columns</h1></p>
 
-<p>All data stored in a relational database will be stored in a table,</p>
+<p>All data stored in a relational database will be stored in a table, within table will be columns, columns are the types of data you are storing ie. first name, last name, phone number, ect. The different entries within your columns are called Rows.</p>
+
+
+<p><h1>Primary and Foreign Keys</h1></p>
+
+<p>Primary and Foreign Keys form relations between two different tables.</p>
+
+<p><h2>Primary Keys</h2></p>
+
+<p>They are used to ensure the data can be identified when stored in a table, this value is not repeated by any other record in that table.</p>
+
+<p><h2>Foreign Keys</h2></p>
+
+<p>A column or columns that also exist in another table within the database, this provides a link between te two databases.</p>
+
+
