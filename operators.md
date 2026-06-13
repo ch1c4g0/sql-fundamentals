@@ -61,5 +61,36 @@ mysql> SELECT *
 <p>The above query returns books that have the name Adroid or IOS.</p>
 
 
+<p><h2>THE "NOT" operator</h2></p>
+
+<p>Revereses the value of the boolean operator, this allows us to exclude a condition.</p>
+
+```
+mysql> SELECT *
+    -> FROM books
+    -> WHERE NOT description LIKE '%guide%';
++----+-----------------+----------------+----------------------------------------+--------------------+
+| id | name            | published_date | description                            | category           |
++----+-----------------+----------------+----------------------------------------+--------------------+
+|  5 | Ethical Hacking | 2021-11-02     | A Hands-on Introduction to Breaking In | Offensive Security |
++----+-----------------+----------------+----------------------------------------+--------------------+
+1 row in set (0.00 sec)
+```
+
+<p>Above shows results that do not contain guide in the description.</p>
+
+<p><h2>The "BETWEEN" operator</h2></p>
+
+<p>Allows us to test if a value exists within a defined range.</p>
+
+```
++----+---------------------------+----------------+--------------------------------------------------------+--------------------+
+| id | name                      | published_date | description                                            | category           |
++----+---------------------------+----------------+--------------------------------------------------------+--------------------+
+|  2 | Bug Bounty Bootcamp       | 2021-11-16     | The Guide to Finding and Reporting Web Vulnerabilities | Offensive Security |
+|  3 | Car Hacker's Handbook     | 2016-02-25     | A Guide for the Penetration Tester                     | Offensive Security |
+|  4 | Designing Secure Software | 2021-12-21     | A Guide for Developers                                 | Defensive Security |
++----+---------------------------+----------------+--------------------------------------------------------+--------------------+
+```
 
 
